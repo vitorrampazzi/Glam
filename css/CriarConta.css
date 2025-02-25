@@ -1,0 +1,60 @@
+:root {
+    --color-black: #161515;
+    --color-black-100: #949292;
+    --color-light: #FFFFFF;
+}
+
+
+
+.navbar-brand {
+    color: var(--color-black-100) !important;
+}
+
+body,
+a {
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-black-100) !important;
+}
+
+.navbar-nav a {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.navbar-nav a:hover {
+
+    color: rgb(235, 231, 8) !important;
+}
+
+.input {
+    width: 100%;
+    background-color: var(--color-black);
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    font-size: 17px;
+
+}
+
+.form-control {
+    background-color: var(--color-black);
+    color: #fff !important;
+    border: 1px solid #444;
+}
+
+.form-control:focus {
+    background-color: var(--color-black);
+    color: #fff;
+    border: 1px solid #666;
+    box-shadow: none;
+}
+
+
+
+.form-control::placeholder {
+    color: #bbb;
+
+}

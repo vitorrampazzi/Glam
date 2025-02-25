@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- menu principal -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container my-4">
+                <a class="navbar-brand" href="#">Glam</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-filter-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Como funciona</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vantagens">Vantagens</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="usuarios.html">Usuarios Cadastrados</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Profissionais
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#barbeiros">Barbeiro</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#cabeleireiros">Cabeleireiro</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#manicure">Manicure</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#maquiadoras">Maquiador</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="nav-link" href="./CriarConta.html">Criar Conta</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Faça Seu Login</h1>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <form action="" id="formLogin">
+                        <div class="modal-body bg-dark">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="Usuario" class="form-label text-light">Email</label>
+                                    <input type="text" id="usuario" class="input bg-dark text-light"
+                                        placeholder="Escreva Aqui...">
+                                </div>
+
+                                <div class="col-12 my-3">
+                                    <label for="senha" class="form-label text-light">Senha</label>
+                                    <input type="password" id="senha" class="input bg-dark text-light"
+                                        placeholder="Escreva Aqui...">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer bg-dark border-0">
+                            <button type="submit" class="btn btn-warning" id="btnLogin">Fazer Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="container my-5" id="glam">
+        <div class="row d-flex justify-content-bettween align-items-center mx-auto ">
+            <div class="col-md-6 px-4">
+                <p>Transforme sua rotina de cuidados pessoais com o site que conecta você aos
+                    melhores profissionais de beleza da sua região. No Glam, você encontra cabeleireiros, barbeiros,
+                    manicures e maquiadores prontos para atender em sua casa ou no conforto de seus próprios
+                    estabelecimentos.
+                </p>
+
+                <p class="mt-4 mb-5">
+                    Seja para um corte de cabelo, uma coloração, cuidados com as unhas ou uma maquiagem
+                    profissional, nossa plataforma oferece uma variedade de opções com profissionais altamente
+                    qualificados.</p>
+
+            </div>
+
+            <section class="col-md-6 grid-img">
+                <div class="grid-item"><img src="./img/cabelereiro1.png" alt="" class="grid-opacity img-fluid">
+                </div>
+
+                <div class="grid-item img-fluid"><img src="./img/cabelereiro4.png" class="grid-not-opacity" img-fluid
+                        alt="">
+                </div>
+
+                <div class="grid-item"><img src="./img/barbeiro3.png" alt="" class="grid-opacity img-fluid"></div>
+
+                <div class="grid-item img-fluid"><img src="./img/pexels-mateusz-dach-99805-3522732.jpg" alt=""
+                        class="grid-not-opacity"></div>
+
+                <div class="grid-item img-fluid"><img src="./img/cabelereiro3.png" class="grid-not-opacity img-fluid"
+                        alt="">
+                </div>
+
+                <div class="grid-item img-fluid"><img src="./img/barbeiro5.jpg" class="grid-opacity" alt=""></div>
+
+                <div class="grid-item img-fluid"><img src="./img/pexels-cheda-stankovic-1807216-3422099.jpg"
+                        class="grid-not-opacity" alt=""></div>
+
+                <div class="grid-item img-fluid"><img src="./img/barbeiro6.jpg" alt="" class="grid-opacity img-fluid">
+                </div>
+
+                <div class="grid-item img-fluid"><img src="./img/pexels-matheusferrero-2463726.jpg"
+                        class="grid-opacity img-fluid" alt="">
+                </div>
+                <div class="grid-item img-fluid"><img src="./img/pexels-polina-tankilevitch-3738375.jpg"
+                        class="grid-not-opacity img-fluid" alt=""></div>
+
+                <div class="grid-item img-fluid"><img src="./img/pexels-olly-3779758.jpg" class="grid-opacity img-fluid"
+                        alt=""></div>
+
+                <div class="grid-item img-fluid "><img src="./img/cabelereiro1.png" class="grid-not-opacity img-fluid"
+                        alt="">
+                </div>
+
+                <div class="grid-item"><img src="./img/cabeleireira-em-salao-de-beleza_1303-27755.avif"
+                        class="grid-not-opacity img-fluid" alt=""></div>
+
+                <div class="grid-item"><img src="./img/cabelereiro7.png" alt="" class="grid-opacity img-fluid">
+                </div>
+
+                <div class="grid-item"><img src="./img/dsc_0640.jpg" alt="" class="grid-not-opacity img-fluid">
+                </div>
+
+                <div class="grid-item grid-opacity"><img
+                        src="./img/5370798-cabeleireiro-e-linda-cliente-mulher-fazendo-tratamento-cabelo-cuidados-saude-em-moda-estilo-salao-gratis-foto.jpg"
+                        class="grid-opacity" img-fluid alt=""></div>
+
+            </section>
+        </div>
+    </div>
+    </section>
+    
+    <div class="container d-flex flex-column justify-content-center align-items-center about" id="about">
+        <h3 class="display-3 my-4">Como funciona?</h3>
+        <div class="row">
+
+            <div class="col-md-6 my-3 col-lg-3">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-award pt-4"></i>
+                    <div class="card-body">
+                        <p class="card-text pb-4">Navegue pelas categorias de profissionais, e escolha o tipo de serviço
+                            o qual
+                            você deseja.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 my-3 col-lg-3">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-map pt-4"></i>
+                    <div class="card-body">
+                        <p class="card-text pb-4">Escolha onde você quer ser atendido na sua casa ou no estabelecimento
+                            do
+                            profissional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 my-3 col-lg-3">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-calendar-date pt-4"></i>
+                    <div class="card-body">
+                        <p class="card-text pb-4">Escolha a data e horário desejada. Rapidamente, e você garante seu
+                            atendimento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 my-3 col-lg-3">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-currency-dollar  pt-4"></i>
+                    <div class="card-body">
+                        <p class="card-text pb-4">O pagamento pode ser feito diretamente a plataforma, garantindo
+                            segurança e
+                            praticidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center about" id="vantagens">
+        <h3 class="display-3 my-4">Vantagens</h3>
+        <div class="row">
+
+            <div class="col-md-6 my-3 col-lg-4">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-person-arms-up pt-4"></i>
+                    <div class="card-body">
+                        <hr class="mb-3">
+                        <h5>Atendimento Personalizado</h5>
+                        <hr class="mb-3">
+                        <p>Atendimento onde e quando você preferir, seja em casa ou no estabelecimento do profissional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 my-3 col-lg-4">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-star pt-4"></i>
+                    <div class="card-body">
+                        <hr class="mb-3">
+                        <h5>Profissionais qualificados</h5>
+                        <hr class="mb-3">
+                        <p>Você poderá ver as avaliações e recomendações de todos os nossos profissionais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 my-3 col-lg-4">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-boxes pt-4"></i>
+                    <div class="card-body">
+                        <hr class="mb-3">
+                        <h5>Variedade de serviços</h5>
+                        <hr class="mb-3">
+                        <p>Encontre desde cortes simples até maquiagens elaboradas e tratamentos
+                            avançados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 my-3 col-lg-4">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-hand-thumbs-up pt-4"></i>
+                    <div class="card-body">
+                        <hr class="mb-3">
+                        <h5>Interface intuitiva</h5>
+                        <hr class="mb-3">
+                        <p>O site é bem simples e fácil de usar, desde a navegação
+                            até o agendamento e pagamento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 my-3 col-lg-4">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-bag-check pt-4"></i>
+                    <div class="card-body">
+                        <hr class="mb-3">
+                        <h5>Pacotes e Promoções</h5>
+                        <hr class="mb-3">
+                        <p>Pacotes especiais e promoções para quem deseja economizar ao agendar vários serviços.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 my-3 col-lg-4">
+                <div class="card bg-dark text-light text-center">
+                    <i class="bi bi-person-raised-hand pt-4"></i>
+                    <div class="card-body">
+                        <hr class="mb-3">
+                        <h5>Atendimento Emergência</h5>
+                        <hr class="mb-3">
+                        <p>Imprevistos acontecem, o site disponibiliza uma opção de
+                            agendamento de última hora.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="container my-4" id="barbeiros">
+        <h1 class="my-5 display-3">Barbeiros</h1>
+        <div class="row" id="aparecerBarbeiro"></div>
+        <p class="text-end my-3"><a href="./paginas de profissionais/barbeiro.html"
+                class="btn btn-secondary text-light">Ver Todos</a></p>
+    </div>
+
+
+    <div class="container my-4" id="cabeleireiros">
+        <h1 class="my-5 display-3">Cabeleireiros</h1>
+        <div class="row" id="aparecerCabeleireiro"></div>
+        <p class="text-end my-3"><a href="./paginas de profissionais/cabeleireiro.html"
+                class="btn btn-secondary text-light">Ver Todos</a></p>
+    </div>
+
+    <div class="container my-4" id="manicure">
+        <h1 class="my-5 display-3">Manicure</h1>
+        <div class="row" id="aparecerManicure"></div>
+        <p class="text-end my-3"><a href="./paginas de profissionais/manicure.html"
+                class="btn btn-secondary text-light">Ver Todos</a></p>
+    </div>
+
+    <div class="container my-4" id="maquiadoras">
+        <h1 class="my-5 display-3">Maquiadores</h1>
+        <div class="row" id="aparecerMaquiador"></div>
+        <p class="text-end my-3"><a href="./paginas de profissionais/maquiador.html"
+                class="btn btn-secondary text-light">Ver Todos</a></p>
+    </div>
+
+
+    <footer>
+        <div id="footer_content">
+
+            <ul class="footer-list">
+                <h3 class="text-white">Pagina Completa</h3>
+                <li><a href="#glam" class="footer-lost">Pagina Inicial</a></li>
+                <li><a href="#about" class="footer-lost">Como Funciona</a></li>
+                <li><a href="#vantagens" class="footer-lost">Vantagens</a></li>
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <h3 class="text-white">Termos De Uso</h3>
+                </li>
+
+                <li class="footer-text">
+                    <a href="" class="text-white text-decoration-none">Politica de Privacidade</a>
+                </li>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/vitorrampazzi/" target="_blank" class="footer-link"
+                        id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" target="_blank" id="facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" target="_blank" id="whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3 class="text-white">Sobre O Glam</h3>
+                </li>
+                <li>
+                    <a href="quemsomos.html" class="footer-lost">Quem Somos?</a>
+                </li>
+                <li>
+                    <a href="" class="footer-lost">Nos dê dicas!</a>
+                </li>
+                <li>
+                    <a href="" class="footer-lost">Avaliar o site</a>
+                </li>
+
+                <li class="d-flex justify-content-end my-3">
+                    <a href="https://www.instagram.com/vitorrampazzi/"
+                        class="Contate-nos rounded bg-warning">Contate-nos</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 id="titulo" class="my-1"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <img src="" alt="Teste" class="modal-img1 img-fluid rounded" id="img1">
+                        </div>
+
+                        <div class="col-3 text-center">
+                            <img src="" alt="Teste" class="modal-img2 img-fluid rounded" id="img2">
+                        </div>
+
+                        <div class="col-3 text-center">
+                            <img src="" alt="Teste" class="modal-img3 img-fluid rounded" id="img3">
+                        </div>
+
+                        <div class="col-3 text-center">
+                            <img src="" alt="Teste" class="modal-img4 img-fluid rounded" id="img4">
+                        </div>
+
+
+                        <div class="col-12 my-3">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Shortbio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="shortbio"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row my-4">
+                                <div class="col-md-6">
+                                    <h6 class="text-dark d-flex justify-content-center bg-warning p-3 rounded"
+                                        id="preco"></h6>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <h6 class="text-dark d-flex justify-content-center bg-warning p-3 rounded"
+                                        id="avaliacao"></h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="./js/login.js"></script>
+
+    <script src="./js/profissionais.js"></script>
+
+    <script src="./js/montarBarbeirosHome.js"></script>
+
+    <script src="./js/montarCabeleirosHome.js"></script>
+
+    <script src="./js/montarManicureHome.js"></script>
+
+    <script src="./js/montarMaquiadorHome.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+
+
+
+
+
+</body>
+
+
+</html>
